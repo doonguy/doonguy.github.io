@@ -1,0 +1,167 @@
+/*CSS Reset*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Import Fonts*/
+@font-face{
+  font-family: Raleway;
+  src: url(../fonts/raleway.ttf);
+}
+
+@font-face{
+  font-family: Source-Sans-Pro;
+  src: url(../fonts/source-sans-pro.ttf);
+}
+
+@font-face{
+  font-family: Chivo-Mono;
+  src: url(../fonts/chivo-mono.ttf);
+}
+
+/*Navbar*/
+.nav{
+  background-color: black;
+  border-bottom: 0px solid black;
+  padding-top: 1.2rem;
+}
+
+@media only screen and (min-width: 600px){
+  .nav{
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*Navbar Logo*/
+.logo{
+  width: 8.4rem;
+  padding-bottom: 1.2rem;
+  margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (min-width: 600px){
+  .logo{
+    margin: 0;
+    padding-bottom: 0rem;
+  }
+}
+
+@media only screen and (min-width: 1100px){
+  .logo{
+    width: 12.0rem;
+  }
+}
+
+/*body stuff*/
+.body{
+  background-color: black;
+}
+
+.heading{
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge{
+  max-height: 2.4rem;
+  max-width: 2.4rem;
+}
+
+.button{
+  font-family: Raleway, sans-serif;
+  padding: 0.6rem;
+  border: 5px solid white;
+  margin: 1.2rem;
+  width: 12rem;
+  min-width: 9.6rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 450px){
+  .button{
+    padding: 0.6rem 1.2rem;
+    width: 18rem;
+  }
+}
+
+.button-link{
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: rgb(104, 0, 122);
+  transform: scale(1.1);
+}
+
+.paragraph{
+  font-family: Raleway, sans-serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+/*Footer*/
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid darkgray;
+  padding: 1.2rem;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+
+@media only screen and (min-width: 1000px){
+  .footer{
+  display: flex;
+  }
+}
+
+/*Copyright*/
+.copyright{
+  padding-bottom: 1.2rem;
+}
+
+@media only screen and (min-width: 1000px){
+  .copyright{
+    flex: 1;
+    text-align: left;
+    padding-bottom: 0rem;
+  }
+}
+
+/*Developers*/
+@media only screen and (min-width: 1000px){
+  .devs{
+  flex: 1;
+  text-align: right;
+  }
+}
+
