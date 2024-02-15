@@ -112,7 +112,7 @@
 }
 
 .button:hover{
-  background-color: rgb(104, 0, 122);
+  background-color: rgb(50, 230, 245);
   transform: scale(1.1);
 }
 
